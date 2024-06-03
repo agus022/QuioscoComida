@@ -1,6 +1,7 @@
 import OrderSidebar from "@/components/order/OrderSideBar";
 import OrderPage from "../order/[category]/page";
 import OrderSummary from "@/components/order/OrderSummary";
+import ToastNotification from "@/components/ui/ToastNotification";
 
 export default function RootLayout({
   children,
@@ -17,6 +18,7 @@ export default function RootLayout({
 
         <OrderSummary />
       </div>
+      <ToastNotification/>
     </>
   );
 }
