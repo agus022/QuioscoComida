@@ -6,7 +6,7 @@ export type OrderItem = Pick<Product, 'id' | 'name' | 'price'> & {
 }
 
 export type OrderWithProducts = Order & {
-    orderProducts: (OrderProducts & {
-        product: Product 
-    })[]
-}
+  orderProducts: (OrderWithProducts & {
+    product: Product;
+  })[];
+};
