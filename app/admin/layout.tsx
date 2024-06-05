@@ -10,6 +10,7 @@ export default async function AdminLayout({
     <>
       <div className="md:flex">
         <aside className="md:w-72 md:h-screen bg-white">
+        
           <AdminSidebar />
         </aside>
 
